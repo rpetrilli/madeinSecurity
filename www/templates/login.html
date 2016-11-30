@@ -1,0 +1,55 @@
+<ion-view hide-nav-bar="false" view-title="Login">
+    <ion-nav-buttons side="primary">
+      <a href="#/app/home" class="button button-clear">
+        <i class="icon ion-ios-arrow-back"></i>
+      </a>
+    </ion-nav-buttons>
+
+  <ion-content style="padding" padding="true">
+    <form >
+      <div class="list list-inset">
+        <label class="item item-input form_trasp">
+          Accedi con un profilo esistente:
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="appData.email" placeholder="Email o nome utente">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="appData.password" placeholder="Password">
+        </label>
+
+        <div class="button-bar form_trasp" >
+            <button class="button button-block button-balanced padding" ng-click="login()" >Accedi</button>
+        </div>
+
+        <label class="item form_trasp">
+          Oppure accedi con:
+        </label>
+
+        <div class="button-bar form_trasp" >
+            <button class="button button-block button-balanced padding" 
+                type="submit" style="background-color:#3b5999"
+                ng-click="facebook_login()">Facebook</button>
+            <a class="button button-block button-balanced padding" href="#/app/home" style="background-color:#d44837">Google +</a>
+        </div>
+
+      </div>
+    </form>
+    <hr/>
+
+      <div class="list list-inset">
+        <label class="item item-input form_trasp">
+          Non possiedi un account:
+        </label>
+
+        <div class="button-bar form_trasp" >
+            <button class="button button-block button-dark padding" ng-click="register()">Registrati</button>
+        </div>
+
+      </div>      
+
+  </ion-content>
+</ion-view>
+
+
+

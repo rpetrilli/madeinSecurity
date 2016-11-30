@@ -1,0 +1,84 @@
+<ion-view hide-nav-bar="false" view-title="Registrati">
+    <ion-nav-buttons side="primary">
+      <a href="#/app/home" class="button button-clear">
+        <i class="icon ion-ios-arrow-back"></i>
+      </a>
+    </ion-nav-buttons>
+
+  <ion-content style="padding" padding="true">
+    <form>
+      <div class="list list-inset" >
+        <div class="button-bar form_trasp" >
+            <button class="button button-block button-balanced padding"  style="background-color:#3b5999">Facebook</button>
+            <a class="button button-block button-balanced padding" href="#/app/home" style="background-color:#d44837">Google +</a>
+        </div>
+
+        <label class="item item-input form_trasp">
+          Registrati compilando i campi:
+        </label>
+        <label class="item item-input item-stacked-label" >
+          <span class="input-label">Email *</span>
+          <input type="text" ng-model="regForm.email" placeholder="Email"  >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Password *</span>
+          <input type="password" ng-model="regForm.password" placeholder="Password"  >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Conferma Password *</span>
+          <input type="password" ng-model="regForm.passwordConf" placeholder="Ripeti Password"  >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome Cognome *</span>
+          <input type="text" ng-model="regForm.denominazione" placeholder="Nome e Cognome">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Sesso *</span>
+          <ion-radio ng-model="regForm.genere" ng-value="'M'">Uomo</ion-radio>
+          <ion-radio ng-model="regForm.genere" ng-value="'F'">Donna</ion-radio>
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Indirizzo</span>
+          <input type="text" ng-model="regForm.indirizzo" placeholder="Indirizzo">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Comune</span>
+          <input type="text" ng-model="regForm.comune" placeholder="Comune">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Telefono</span>
+          <input type="text" ng-model="regForm.telefono" placeholder="Telefono">
+        </label>
+
+        
+        <label class="item item-input form_trasp item-text-wrap" style="font-size:0.7em">
+          <br/>
+          <br/>
+          Potrai modificare i tuoi dati dalle impostazioni del profilo Made in Security.
+          La creazione dell'account implica l'accettazione del trattamento dei dati personali
+        </label>
+
+
+
+      </div>
+    </form>
+   
+
+  </ion-content>
+
+
+  <ion-footer-bar  class="bar-dark" style="padding-top:0px;">
+    <button class="button button-block button-dark" ng-click="register()" >Registrati</button>
+  </ion-footer-bar>
+
+
+
+
+
+</ion-view>
+
+
+
+
+

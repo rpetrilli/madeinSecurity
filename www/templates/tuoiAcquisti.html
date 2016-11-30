@@ -1,0 +1,18 @@
+<ion-view view-title="I tuoi acquisti">
+    <ion-nav-buttons side="primary">
+      <a href="#/app/programs" class="button button-clear">
+        <i class="icon ion-ios-arrow-back"></i>
+      </a>
+    </ion-nav-buttons>    
+
+    <ion-content class="has-header">
+    <ion-list >
+        <ion-item ng-repeat="item in i_miei_acquisti"  class="item-thumbnail-left">
+            <img ng-src="{{item.image}}">
+            <h2>{{item.cod_articolo}} {{item.descrizione}}</h2>
+            <div ng-bind-html="item.html_prodotto"></div>
+        </ion-item>
+    </ion-list>
+    </ion-content>
+
+</ion-view>

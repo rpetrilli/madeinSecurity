@@ -1,0 +1,13 @@
+{
+  "name": "menu",
+  "app_id": "5aebf916",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "scss/**/*",
+    "!www/lib/**/*"
+  ]
+}

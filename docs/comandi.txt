@@ -1,0 +1,22 @@
+
+ionic upload
+
+cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyD5gNJHQFv_om6zl-7-4KPCicgicgLoiLg" --variable API_KEY_FOR_IOS="AIzaSyD5gNJHQFv_om6zl-7-4KPCicgicgLoiLg"
+
+cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="1607225242907242" --variable APP_NAME="Made in security"
+
+ionic build android --release
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "C:\Users\Administrator\Documents\keystore"  "C:\Users\Administrator\Documents\workspace_ionic\sidemenu\platforms\android\build\outputs\apk\android-release-unsigned.apk" implementa
+
+
+"C:\Program Files\android-sdk-windows\build-tools\21.1.2\zipalign" -v 4 "C:\Users\Administrator\Documents\workspace_ionic\sidemenu\platforms\android\build\outputs\apk\android-release-unsigned.apk" "C:\Users\Administrator\Documents\workspace_ionic\sidemenu\platforms\android\build\outputs\apk\madeSecurity.apk"
+
+Facebook id_app 1607225242907242
+         Chiave segreta 9efe669bd6174dd268c240abb20358be
+
+
+add https://github.com/bez4pieci/Phonegap-Cookies-Plugin.git         
+
+
+La cartella dei comandi di nodesjs è
+C:\Users\Administartor\AppData\Roaming\npm

@@ -1,0 +1,90 @@
+<ion-view view-title="{{settings.app_name}}">
+  <ion-content>
+	
+
+    <div class="list">
+      <div class="item item-positive item-avatar item-button-right">
+        <img src="{{appData.consumatore.image}}">
+        <p style="color:lightgrey;">Utente:</p>
+        <h2 style="color:white;">{{appData.consumatore.denominazione}}</h2>
+
+        <button class="button button-positive" ng-click="logout()">
+          <i class="icon ion-android-exit"></i>
+        </button>
+      </div>
+    </div>
+
+<ion-slide-box >
+  <ion-slide>
+    <div class="button-bar menu_item">
+
+      <button class="button button-icon icon trns ion-ios-arrow-back" ng-disabled="true">
+          </button>
+
+      <div>
+        <a href="#/app/leggiCodice">
+
+          <img src="img/qr-code.svg" alt="Leggi codice" style="width:100%; max-width:250px;">
+        </a>
+        <h4 class="linkmenu">Autentica un prodotto</h4>
+      </div>
+
+      <button class="button button-icon icon trns ion-ios-arrow-forward" ng-click="slideNext()">
+          </button>
+    </div>
+    <div style="height:30px;">
+    </div>
+  </ion-slide>
+
+  <ion-slide>
+
+    <div class="button-bar menu_item">
+
+      <button class="button button-icon icon trns ion-ios-arrow-back" ng-click="slidePrevious()">
+          </button>
+
+      <div>
+        <a href="#/app/tuoiAcquisti">
+
+          <img src="img/list-acquisti.svg" alt="I tuoi acquisti" style="width:100%; max-width:250px;">
+        </a>
+        <h4 class="linkmenu">I tuoi acquisti</h4>
+      </div>
+
+      <button class="button button-icon icon trns ion-ios-arrow-forward" ng-click="slideNext()">
+      </button>
+    </div>
+    <div style="height:30px;">
+    </div>
+
+
+  </ion-slide>
+  <ion-slide>
+
+    <div class="button-bar menu_item">
+
+      <button class="button button-icon icon trns ion-ios-arrow-back" ng-click="slidePrevious()">
+          </button>
+
+      <div>
+        <a href="#/app/storeLocator">
+
+          <img src="img/point-of-interest.svg" alt="Trova uno store affiliato" style="width:100%; max-width:250px;">
+        </a>
+        <h4 class="linkmenu">Trova uno store affiliato</h4>
+      </div>
+
+      <button class="button button-icon icon trns ion-ios-arrow-forward" ng-disabled="true">
+      </button>
+    </div>
+    <div style="height:60px;">
+    </div>
+
+  </ion-slide>
+</ion-slide-box>
+
+
+
+
+  </ion-content>
+</ion-view>
